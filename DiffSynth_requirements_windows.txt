@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1+cu121
+torchvision==0.18.1+cu121
+cupy-cuda12x
+transformers
+controlnet-aux==0.0.7
+streamlit
+streamlit-drawable-canvas
+imageio
+imageio[ffmpeg]
+safetensors
+einops
+sentencepiece
+modelscope
+basicsr==1.4.2
+numpy==1.25.1
+wheel

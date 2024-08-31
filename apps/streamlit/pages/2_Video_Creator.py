@@ -63,9 +63,9 @@ with st.expander("Data", expanded=True):
         input_video = st.text_input("Input Video File Path (e.g., data/your_video.mp4)", value="")
         column_height, column_width, column_start_frame_index, column_end_frame_index = st.columns([2, 2, 1, 1])
         with column_height:
-            height = st.select_slider("Height", options=[256, 512, 768, 1024, 1536, 2048], value=1024)
+            height = st.select_slider("Height", options=[256, 512, 576, 768, 1024, 1536, 2048], value=1024)
         with column_width:
-            width = st.select_slider("Width", options=[256, 512, 768, 1024, 1536, 2048], value=1024)
+            width = st.select_slider("Width", options=[256, 512, 576, 768, 1024, 1536, 2048], value=1024)
         with column_start_frame_index:
             start_frame_id = st.number_input("Start Frame id", value=0)
         with column_end_frame_index:
@@ -106,10 +106,10 @@ with st.expander("ControlNet Units", expanded=True):
                                             disabled=controlnet_ckpt == "None", key=f"controlnet_input_video_{controlnet_id}")
                 column_height, column_width, column_start_frame_index, column_end_frame_index = st.columns([2, 2, 1, 1])
                 with column_height:
-                    height = st.select_slider("Height", options=[256, 512, 768, 1024, 1536, 2048], value=1024,
+                    height = st.select_slider("Height", options=[256, 512, 576, 768, 1024, 1536, 2048], value=1024,
                                               disabled=controlnet_ckpt == "None", key=f"controlnet_height_{controlnet_id}")
                 with column_width:
-                    width = st.select_slider("Width", options=[256, 512, 768, 1024, 1536, 2048], value=1024,
+                    width = st.select_slider("Width", options=[256, 512, 576, 768, 1024, 1536, 2048], value=1024,
                                               disabled=controlnet_ckpt == "None", key=f"controlnet_width_{controlnet_id}")
                 with column_start_frame_index:
                     start_frame_id = st.number_input("Start Frame id", value=0,
