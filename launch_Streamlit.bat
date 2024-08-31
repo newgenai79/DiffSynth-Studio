@@ -2,7 +2,7 @@
 REM Change to the directory of the batch file
 cd /d "%~dp0"
 
-REM Activate the LipSick environment
+REM Activate the virtual environment
 call venv\scripts\activate
 
 REM Run app.py
