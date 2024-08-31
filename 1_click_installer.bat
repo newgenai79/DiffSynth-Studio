@@ -1,4 +1,3 @@
-@echo off
 REM Change to the directory of the batch file
 cd /d "%~dp0"
 
