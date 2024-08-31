@@ -15,3 +15,4 @@ modelscope
 basicsr==1.4.2
 numpy==1.25.1
 wheel
+cpm_kernels==1.0.11
