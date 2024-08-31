@@ -9,7 +9,7 @@ REM activate virtual environment
 call venv\scripts\activate
 
 REM Install dependencies
-pip install -r DiffSynth_requirements_windows
+pip install -r DiffSynth_requirements_windows.txt
 
 REM Download models
 python download_models.py
